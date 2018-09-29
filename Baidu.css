@@ -1,0 +1,228 @@
+/* ------top------ */
+#top{
+	height: 100px;
+	/* background-color: red; */
+}
+#list , #sublist{
+	list-style-type: none;
+}
+
+#list{
+	float: right;
+	/* margin-bottom: 5px; */
+}
+
+.list_item{
+	font-weight: bold;
+	font-family: arial;
+	width: 40px;
+	float: left;
+	margin-left: 9px;
+	/* margin-bottom: 0;
+	padding-bottom: 0; */
+	text-align: center;
+	vertical-align: bottom;
+	line-height: 24px;    /*亲测：若无该语句，hao123与其他li垂直方向不对齐*/
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+.no_bold{
+	font-weight: normal;
+}
+.item_width{
+	width: 60px;
+}
+
+
+a:link , a:visited{   /*使用伪类设置链接状态*/
+	color: black;
+}
+
+a:hover{
+	color: blue;
+}
+
+#sublist{
+	display: none;   /*隐藏设置下的子列表*/
+	width: 40px;
+	margin-top: 8px;
+	border: 1px solid #ccc;
+	margin-left: -20px;
+
+}
+
+.sublist_item{
+	width: 60px;
+	text-align: left;
+	display: inline-block;
+	margin-left: -30px;
+}
+
+
+.list_item:hover #sublist{
+	display: block;
+}
+
+/* ------middle------ */
+#middle{
+	height: 380px;	
+	margin: 0;
+	padding: 0;
+	text-align: center;   /*中间部分整体居中*/
+}
+
+#logo{
+	width: 270px;
+	height: 129px;
+	display: block; 
+	margin: 0 auto;
+	
+}
+
+#form {
+	display: inline-block;
+	height: 36px;
+	width: 640px;
+	margin: 22px auto 0;
+	padding: 0;
+	/* background-color: blue; */
+	/* font: 24px; */
+}
+
+#input{
+	border: 1px solid #bbb;
+	display: inline-block;
+	position: relative;
+	height: 32px;
+	width: 540px;
+	text-align: left;
+	/* vertical-align: bottom; */
+	margin: 0;
+	padding: 0;
+	/* background-color: green; */
+	
+}
+
+#text{
+	width: 453px;
+	height: 24px;
+	display: inline-block;
+	/* vertical-align: bottom; */
+	margin:4px 0 4px 7px;  
+	padding: 0;  
+	border: none;
+	outline: none;
+	font-size: 18px;        /*  设置输入文本的大小 */
+	/* background-color: red;  */
+}
+
+#yuyin{
+	display: inline-block;
+	z-index: 1;
+	position: absolute;
+	/* border: 1px  solid  red; */
+	height: 28px;
+	width: 32px;
+	margin-top: 1px;
+	background: url('image/yuyin.png') no-repeat center;
+	background-size:13px 18px;       /*设置背景图象的尺寸*/ 
+	/* background-position: 0 50%; */
+	/* border-right: 1px solid #ccc ; */
+	cursor: pointer;
+	/* border: 1px solid blue; */
+}
+
+#soutu{
+	margin-top: 6px;
+	padding: 0;
+	display: inline-block;
+	z-index: 1;
+	right: 11px;       /*设置元素的位置距离右边缘的距离*/
+	position: absolute;
+	height: 18px;
+	width: 32px;
+	background: url('image/tuxiang12.png') ;/*图像拼合技术，定义背景图像和它的位置 */
+	background-repeat: no-repeat;
+	background-position: 12px 1px;     /* 12px是为了让两个元素与中间竖杠的间距相等 */
+	cursor: pointer;
+	background-size: 18px 36px;
+	/* border: 1px solid red; */
+	border-left: 1px solid #e7e7e7;
+}
+
+#yuyin:hover{
+	background: url('image/yuyin2.png') no-repeat center;
+	background-size:13px 18px;       /*设置背景图象的尺寸*/ 
+}
+
+#soutu:hover{
+	background: url('image/tuxiang12.png') ;/*图像拼合技术，定义背景图像和它的位置 */
+	background-repeat: no-repeat;
+	background-position: 12px -19px;   /*设置鼠标在该元素上方时背景图的位置*/
+	background-size: 18px 36px;
+}
+
+#button{
+	z-index:2;
+	display: inline-block;
+	margin-left: -5px;
+	padding: 0;
+	width: 99px;
+	height: 34px;
+	vertical-align: top;
+	color: #fff;
+	background-color: #3385ff;
+	border: none;
+	font-size: 15px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-align: center;
+}
+
+
+/*------bottom-----*/
+#bottom{
+	height: 200px;
+	text-align: center;
+	margin-top: 60px;
+	/* background-color: gray; */
+}
+
+#bottom img{
+	width: 60px;
+	height: 60px;
+	background-color: gray;
+}
+
+#bottom p{
+	margin: 0 auto;
+	color: #666;
+	font-weight: bold;
+	font-size: 12px ;
+	font-family: arial;
+}
+ #link{
+	margin-top: 20px;
+	font:12px arial ;
+	color: #999;
+	text-align: center;
+ }
+
+ #link a{
+ 	line-height:22px ;
+	color: #999;
+ 	margin: 0 10px;
+	cursor: auto;
+ }
+
+
+
+
+
+
+
+
+
+
+
